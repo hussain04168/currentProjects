@@ -1,3 +1,6 @@
 body {
   font-family: "Noto Sans JP", sans-serif;
+  background: url(todoBackground.jpg);
+  background-repeat: no-repeat;
+  background-size: auto;
 }
