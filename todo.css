@@ -1,6 +1,110 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --btnBackgroundColor: hsl(0, 0%, 83%);
+  --btnBackgroundColorDilute: hsl(0, 0%, 89%);
+}
+
 body {
   font-family: "Noto Sans JP", sans-serif;
-  background: url(todoBackground.jpg);
+  background: linear-gradient(
+    to bottom,
+    rgba(200, 0, 0, 0.5),
+    rgba(150, 0, 0, 0.6)
+  );
   background-repeat: no-repeat;
-  background-size: auto;
+  margin: 0;
+  font-weight: 700;
+  min-height: 100vh;
+}
+
+.entries-div {
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  /* background-color: aquamarine; */
+  width: 70vw;
+  margin: 0 auto;
+}
+.page-title {
+  text-align: center;
+  margin: 1.5rem 0;
+}
+
+label {
+  font-size: 1.35rem;
+  font-weight: 700;
+}
+
+#new-entry {
+  margin: 0 1rem;
+  outline: none;
+  box-shadow: 0.5px 1px 1.5px rgba(0, 0, 0, 0.3),
+    1px 1.5px 2px rgba(0, 0, 0, 0.2), 1.5px 2px 2.5px rgba(0, 0, 0, 0.3);
+  border: none;
+  font-size: 1.35rem;
+  padding: 0.25em 0;
+  width: 50%;
+}
+
+.submit-btn {
+  font-weight: 500;
+  padding: 0.25em 0.75em;
+  font-size: 1.35rem;
+  border: none;
+  outline: none;
+  box-shadow: 0.5px 1px 1.5px rgba(0, 0, 0, 0.3),
+    1px 1.5px 2px rgba(0, 0, 0, 0.2), 1.5px 2px 2.5px rgba(0, 0, 0, 0.3);
+  transition: all 0.25s ease-in-out;
+  background-color: var(--btnBackgroundColor);
+}
+
+.submit-btn:focus,
+.submit-btn:hover {
+  background-color: var(--btnBackgroundColorDilute);
+}
+
+/********************** 
+  list Container style 
+***********************/
+
+.list-container {
+  /* background-color: lightgreen; */
+  width: 70vw;
+  margin: 0 auto;
+  font-size: 1.35rem;
+}
+
+.list-item {
+  /* background-color: lightseagreen; */
+  margin: 1rem;
+  width: 98%;
+  padding: 0.3em 0.4em;
+  border-bottom: 2px solid black;
+  box-shadow: 0.5px 1px 1.5px rgba(0, 0, 0, 0.3),
+    1px 1.5px 2px rgba(0, 0, 0, 0.2);
+}
+
+.done-btn,
+.remove-btn {
+  font-size: inherit;
+  margin: 0.75rem 0.25rem;
+  padding: 0.1em 0.5em;
+  background-color: var(--btnBackgroundColor);
+  border: none;
+  box-shadow: 0.5px 1px 1.5px rgba(0, 0, 0, 0.3),
+    1px 1.5px 2px rgba(0, 0, 0, 0.2), 1.5px 2px 2.5px rgba(0, 0, 0, 0.3);
+}
+
+.done-btn:focus,
+.remove-btn:focus,
+.done-btn:hover,
+.remove-btn:hover {
+  background-color: var(--btnBackgroundColorDilute);
 }
