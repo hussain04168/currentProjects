@@ -32,10 +32,9 @@
 // console.log(reducedValue);
 
 const form = document.querySelector(".entries-form");
-const doneButton = document.querySelector(".done-btn");
-const removeButton = document.querySelector(".remove-btn");
 let userEntry = document.querySelector("#new-entry");
 let todoListContainer = document.querySelector(".list-container");
+const alertMessage = document.querySelector(".blank-message");
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
@@ -57,8 +56,12 @@ form.addEventListener("submit", (e) => {
     newLi.append(newDiv);
     todoListContainer.appendChild(newLi);
   } else {
-    alert("Please fill in entry");
+    alertMessage.style.display = "block";
   }
+
+  alertMessage.addEventListener("click", (event) => {
+    alertMessage.style.display = "none";
+  });
 
   doneButton.addEventListener("click", () => {
     newParagraph.style.textDecoration = "line-through";
