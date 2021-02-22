@@ -61,7 +61,12 @@ form.addEventListener("submit", (e) => {
   }
 
   doneButton.addEventListener("click", () => {
-    newParagraph.style.textDecoration = "line-through red";
+    newParagraph.style.textDecoration = "line-through";
+    newParagraph.style.textDecorationThickness = ".25em";
+  });
+
+  removeButton.addEventListener("click", () => {
+    todoListContainer.removeChild(newLi);
   });
 
   userEntry.value = "";
