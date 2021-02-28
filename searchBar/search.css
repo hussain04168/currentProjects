@@ -1,0 +1,77 @@
+/****************** 
+     Preset 
+********************/
+
+*::before,
+*::after,
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/************* 
+   body 
+***************/
+
+.page-title {
+  text-align: center;
+}
+
+body {
+  background: linear-gradient(to bottom, pink, honeydew);
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+/*********************
+ search bar container
+**********************/
+
+.search-container {
+  /* background-color: indianred; */
+  padding: 2rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+img {
+  width: 200px;
+  height: 200px;
+}
+
+.user-input {
+  padding: 0.25em 0.1em;
+  font-size: 1.5rem;
+  margin-right: 0.25rem;
+  outline: none;
+}
+
+.search-btn {
+  padding: 0 0.5em;
+  font-size: 1.5rem;
+  background-color: hsl(275, 100%, 25%);
+  color: aliceblue;
+  border: none;
+  cursor: pointer;
+}
+
+.result-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* background-color: coral; */
+  width: max-content;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+
+.search-btn:hover {
+  background-color: hsl(275, 100%, 35%);
+  outline: none;
+}
+
+.search-result {
+  /* display: none; */
+  transform: translateX(-110%);
+}
