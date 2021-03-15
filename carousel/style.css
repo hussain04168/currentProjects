@@ -48,6 +48,8 @@ img {
 
 .slide-child {
   display: none;
+  transition: opacity 0.3s ease-in-out;
+  animation: 0.7s ease-in-out;
 }
 
 .show-slide {
@@ -100,4 +102,17 @@ button:focus {
 .dot-child:hover,
 .dot-child:focus {
   background-color: rgba(255, 225, 204, 0.5);
+}
+
+.show-dot {
+  background-color: rgba(255, 225, 204, 0.5);
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
 }
