@@ -44,3 +44,46 @@ previousButton.addEventListener("click", () => {
     dots[currentSlide].classList.add("show-dot");
   }
 });
+
+// Dot selection logic
+
+// // First dot
+// dotOne.addEventListener("click", () => {
+//   slides[currentSlide].classList.remove("show-slide");
+//   dots[currentSlide].classList.remove("show-dot");
+//   slides[0].classList.add("show-slide");
+//   dots[0].classList.add("show-dot");
+// });
+
+// // Second dot
+// dotTwo.addEventListener("click", () => {
+//   slides[currentSlide].classList.remove("show-slide");
+//   dots[currentSlide].classList.remove("show-dot");
+//   slides[1].classList.add("show-slide");
+//   dots[1].classList.add("show-dot");
+// });
+
+// // Third dot
+// dotThree.addEventListener("click", () => {
+//   slides[currentSlide].classList.remove("show-slide");
+//   dots[currentSlide].classList.remove("show-dot");
+//   slides[2].classList.add("show-slide");
+//   dots[2].classList.add("show-dot");
+// });
+
+// // Fourth dot
+// dotFour.addEventListener("click", () => {
+//   removeStyle(2);
+// });
+
+// function removeStyle(a) {
+//   for (let i = 0; i < dots.length; i++) {
+//     if (dots[i] !== a) {
+//       slides[i].classList.remove("show-slide");
+//       dots[i].classList.remove("show-dot");
+//     } else {
+//       slides[i].classList.add("show-slide");
+//       dots[i].classList.add("show-dot");
+//     }
+//   }
+// }
