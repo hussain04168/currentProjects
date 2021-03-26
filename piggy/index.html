@@ -12,10 +12,35 @@
 
     <!--Game wrapper-->
     <div class="wrapper">
+      <button class="restart-btn">Restart 🔄</button>
+      <button class="info-btn">?</button>
+      <h1 class="winner-tittle">Player 1 is the winner 🎉🎉</h1>
       <!-- player 1 wrapper -->
-      <div class="player-1-wrapper"></div>
+      <div class="player-1-wrapper">
+        <h2 class="player-1">Player 1</h2>
+        <!-- Score indicators -->
+        <h3 class="total-score">0</h3>
+        <h3 class="round-score">
+          Round score: <span class="round-score-number">0</span>
+        </h3>
+      </div>
+
+      <!-- Die wrapper -->
+      <div class="dice-parent">
+        <img src="dice-1.png" alt="picture of dice" class="dice-1 dice" />
+        <img src="dice-2.png" alt="picture of dice" class="dice-2 dice" />
+      </div>
       <!-- player 2 wrapper -->
-      <div class="player-2-wrapper"></div>
+      <div class="player-2-wrapper">
+        <h2 class="player-2">Player 2</h2>
+        <!-- Score indicators -->
+        <h3 class="total-score">0</h3>
+        <h3 class="round-score">
+          Round score: <span class="round-score-number">0</span>
+        </h3>
+      </div>
+      <button class="roll-dice-btn">Roll 🎲</button>
+      <button class="hold-btn">Hold ☟</button>
     </div>
   </body>
 </html>
