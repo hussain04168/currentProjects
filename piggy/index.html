@@ -5,42 +5,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Piggy Game</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <script src="app.js" defer></script>
   </head>
   <body>
-    <h1 class="page-title">Piggy Games</h1>
+    <h1 class="page-title">Piggy Game</h1>
 
     <!--Game wrapper-->
+
+    <!-- Reset and instruction buttons -->
     <div class="wrapper">
-      <button class="restart-btn">Restart 🔄</button>
-      <button class="info-btn">?</button>
-      <h1 class="winner-tittle">Player 1 is the winner 🎉🎉</h1>
-      <!-- player 1 wrapper -->
-      <div class="player-1-wrapper">
-        <h2 class="player-1">Player 1</h2>
-        <!-- Score indicators -->
-        <h3 class="total-score">0</h3>
-        <h3 class="round-score">
-          Round score: <span class="round-score-number">0</span>
-        </h3>
+      <div class="top-game-board">
+        <button class="restart-btn">Restart 🔄</button>
+
+        <button class="info-btn">?</button>
       </div>
 
-      <!-- Die wrapper -->
+      <!-- Players wrapper -->
+      <div class="players">
+        <!-- player 1 wrapper -->
+        <div class="player-1-wrapper">
+          <h2 class="player-name">Player 1</h2>
+          <!-- Score indicators -->
+          <h3 class="total-score">0</h3>
+          <div class="round-score">
+            <h3>Current score</h3>
+            <span class="round-score-number">0</span>
+          </div>
+        </div>
+
+        <!-- player 2 wrapper -->
+        <div class="player-2-wrapper">
+          <h2 class="player-name">Player 2</h2>
+          <!-- Score indicators -->
+          <h3 class="total-score">0</h3>
+          <div class="round-score">
+            <h3>Current score</h3>
+            <span class="round-score-number">0</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Dice wrapper -->
       <div class="dice-parent">
         <img src="dice-1.png" alt="picture of dice" class="dice-1 dice" />
         <img src="dice-2.png" alt="picture of dice" class="dice-2 dice" />
       </div>
-      <!-- player 2 wrapper -->
-      <div class="player-2-wrapper">
-        <h2 class="player-2">Player 2</h2>
-        <!-- Score indicators -->
-        <h3 class="total-score">0</h3>
-        <h3 class="round-score">
-          Round score: <span class="round-score-number">0</span>
-        </h3>
+
+      <!-- Hold and Roll buttons -->
+      <div class="bottom-game-board">
+        <button class="roll-dice-btn">Roll 🎲</button>
+        <button class="hold-btn">Hold ☟</button>
       </div>
-      <button class="roll-dice-btn">Roll 🎲</button>
-      <button class="hold-btn">Hold ☟</button>
     </div>
   </body>
 </html>

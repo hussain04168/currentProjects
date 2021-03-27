@@ -1,3 +1,200 @@
+/*************** 
+ Reset and body
+*****************/
+*::before,
+*::after,
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --secondaryColor: hsl(0, 100%, 65%);
+  --fontSize: 1.3rem;
+}
+
 body {
   background-color: #e8b4b8;
+  font-size: var(--fontSize);
+  font-family: "Open Sans", sans-serif;
+}
+
+.page-title {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+/*******************
+    Game board
+********************/
+
+.wrapper {
+  background-color: rgba(103, 89, 94, 0.5);
+  width: 85vw;
+  height: 80vh;
+  margin: 0 auto;
+  position: relative;
+  box-shadow: 0.25px 0.5px 0.75px rgba(0, 0, 0, 0.5),
+    0.5px 0.75px 1px rgba(0, 0, 0, 0.5), 0.75px 1px 1.25px rgba(0, 0, 0, 0.4),
+    1px 1.25px 1.5px rgba(0, 0, 0, 0.4), 2px 4px 6px rgba(0, 0, 0, 0.4),
+    2.5px 4.5px 6.5px rgba(0, 0, 0, 0.4);
+}
+
+/******************
+ Reset and 
+ instruction
+ buttons
+****************** */
+.top-game-board {
+  display: flex;
+  justify-content: space-between;
+  /* background-color: hotpink; */
+  z-index: 2;
+  position: absolute;
+  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0 0.75rem;
+  margin-top: 1rem;
+}
+
+.restart-btn {
+  border: 0.25px solid black;
+  border-radius: 4px;
+  padding: 0.15em 0.25em;
+  outline: none;
+  cursor: pointer;
+  font-size: 1.3rem;
+}
+
+button {
+  background-color: hsl(0, 23%, 95%);
+  letter-spacing: 0.09em;
+}
+
+button:hover {
+  background-color: hsl(0, 10%, 97%);
+}
+
+.info-btn {
+  border-radius: 50%;
+  padding: 0.5em;
+  font-size: 1.2rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: var(--secondaryColor);
+  color: white;
+}
+
+.info-btn:hover {
+  background-color: hsl(0, 90%, 70%);
+}
+/***********
+    Dice
+************/
+.dice-parent {
+  /* background-color: crimson; */
+  z-index: 2;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.dice {
+  height: 75px;
+  width: 75px;
+  background-color: var(--secondaryColor);
+  border-radius: 8px;
+}
+
+/**************
+    Players
+ **************/
+
+.players {
+  /* background-color: cyan; */
+  /* padding: 2rem; */
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+/* .player-name {
+  text-align: center;
+} */
+
+.player-1-wrapper {
+  background-color: hsl(7, 44%, 85%);
+  /* position: absolute; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  /* z-index: 1; */
+  width: 50%;
+}
+
+.player-2-wrapper {
+  background-color: #eed6d3;
+  /* position: absolute; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 50%;
+}
+
+.round-score {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--secondaryColor);
+  color: white;
+  padding: 0.5em;
+  font-size: 1.3rem;
+  border-radius: 4px;
+}
+
+.round-score h3 {
+  margin-bottom: 1rem;
+}
+
+.total-score {
+  font-size: 3rem;
+}
+
+.round-score-number {
+  font-size: 2.5rem;
+}
+
+/**********************
+ Hold and roll buttons  
+***********************/
+
+.bottom-game-board {
+  /* background-color: darkgoldenrod; */
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  z-index: 2;
+  bottom: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.roll-dice-btn,
+.hold-btn {
+  border: 0.25px solid black;
+  border-radius: 4px;
+  outline: none;
+  cursor: pointer;
+  padding: 0.15em 0.25em;
+  font-size: 1.3rem;
+}
+
+.roll-dice-btn {
+  margin-bottom: 1rem;
 }
