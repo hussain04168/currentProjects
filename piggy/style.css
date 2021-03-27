@@ -77,6 +77,10 @@ button:hover {
   background-color: hsl(0, 10%, 97%);
 }
 
+.info-div {
+  position: relative;
+}
+
 .info-btn {
   border-radius: 50%;
   padding: 0.5em;
@@ -91,6 +95,17 @@ button:hover {
 .info-btn:hover {
   background-color: hsl(0, 90%, 70%);
 }
+/* 
+.instruction-paragraph {
+  position: absolute;
+  font-size: 1.3rem;
+  z-index: 3;
+  width: 60vw;
+  height: max-content;
+  right: 15%;
+  background-color: wheat;
+  border: 1px solid black;
+} */
 /***********
     Dice
 ************/
@@ -122,23 +137,18 @@ button:hover {
   width: 100%;
 }
 
-/* .player-name {
-  text-align: center;
-} */
-
 .player-1-wrapper {
-  background-color: hsl(7, 44%, 85%);
+  background-color: hsl(7, 44%, 88%);
   /* position: absolute; */
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  /* z-index: 1; */
   width: 50%;
 }
 
 .player-2-wrapper {
-  background-color: #eed6d3;
+  background-color: hsl(7, 44%, 88%);
   /* position: absolute; */
   display: flex;
   flex-direction: column;
@@ -168,6 +178,10 @@ button:hover {
 
 .round-score-number {
   font-size: 2.5rem;
+}
+
+.active {
+  background-color: hsl(7, 44%, 83%);
 }
 
 /**********************
