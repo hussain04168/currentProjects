@@ -1,0 +1,36 @@
+.message {
+  background-color: rgba(82, 156, 38, 0.5);
+  color: white;
+  width: max-content;
+  padding: 0.25em 0.95em;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 2px dashed rgba(82, 156, 38, 0.9);
+  visibility: hidden;
+}
+
+form {
+  font-size: 1.1rem;
+}
+
+.check-btn {
+  padding: 0.5em;
+  font-weight: 700;
+  background-color: rgb(240, 198, 146);
+  border-radius: 9%;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: white;
+  outline: none;
+  border: 1px solid black;
+}
+
+.check-btn:hover {
+  background-color: rgba(240, 198, 146, 0.8);
+}
